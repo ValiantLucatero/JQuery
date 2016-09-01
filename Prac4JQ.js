@@ -1,0 +1,41 @@
+var n;
+var data;
+$("#h2").click(function(){
+	n=this.id;
+	$.ajax({
+	url:"Prac4.5.5JQ.php",
+	data:{id:n},
+	type:"GET",
+	dataType:"text",
+	success:function(data)
+	{
+		$("div").html(data);
+	}
+	});
+});
+$("#h5").click(function(){
+	n=this.id;
+	$.ajax({
+	url:"Prac4.5.5JQ.php",
+	data:{id:n},
+	type:"GET",
+	dataType:"text",
+	success:function(data)
+	{
+		$("div").html(data);
+	}
+	});
+});
+$("#h5l").click(function(){
+	n=this.id;
+	$.ajax({
+	url:"Prac4.5.5JQ.php",
+	data:{id:n},
+	type:"GET",
+	dataType:"text",
+	success:function(data)
+	{
+		$("div").html(data);
+	}
+	});
+});
